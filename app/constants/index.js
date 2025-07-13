@@ -1,0 +1,131 @@
+// app/constants/index.js
+export const COMPANY_INFO = {
+  name: 'Shakcon Properties',
+  tagline: 'For All Your Home Restoration Needs',
+  description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity.',
+  license: 'CGC1534303',
+};
+
+export const CONTACT_INFO = {
+  phone: '(352) 933-5181',
+  phoneRaw: '3529335181',
+  email: 'info@shakcon.com',
+  address: 'Central Florida',
+};
+
+export const BUSINESS_HOURS = {
+  weekday: 'Monday - Friday: 8:00 AM - 6:00 PM',
+  saturday: 'Saturday: 9:00 AM - 4:00 PM',
+  sunday: 'Sunday: Emergency Services Only',
+};
+
+export const SERVICE_AREAS = [
+  'Leesburg',
+  'Orlando', 
+  'Winter Park',
+  'The Villages',
+  'Mount Dora',
+  'Fruitland Park',
+  'Eustis',
+  'Clermont',
+  'Lake Mary',
+  'Windermere',
+];
+
+export const SERVICES = [
+  {
+    title: 'Roofing Services',
+    description: 'Complete roofing solutions for your home',
+    features: [
+      'Complete roof replacement',
+      'Roof repair and maintenance',
+      'Storm damage assessment',
+      'Insurance claim assistance',
+      'Leak detection and repair',
+      'Gutter installation'
+    ]
+  },
+  {
+    title: 'Kitchen Remodeling',
+    description: 'Transform your kitchen into a modern masterpiece',
+    features: [
+      'Custom cabinet design & installation',
+      'Granite & quartz countertops',
+      'Kitchen island construction',
+      'Backsplash installation',
+      'Lighting upgrades',
+      'Appliance installation'
+    ]
+  },
+  {
+    title: 'Bathroom Renovation',
+    description: 'Create your dream bathroom retreat',
+    features: [
+      'Complete bathroom remodels',
+      'Walk-in shower conversions',
+      'Custom vanity installation',
+      'Tile work and flooring',
+      'Plumbing upgrades',
+      'Accessibility modifications'
+    ]
+  },
+  {
+    title: 'Storm Restoration',
+    description: '24/7 emergency restoration services',
+    features: [
+      'Emergency tarping & board-up',
+      'Water damage restoration',
+      'Wind damage repair',
+      'Tree damage cleanup',
+      'Insurance documentation',
+      'Complete property restoration'
+    ]
+  },
+  {
+    title: 'General Contracting',
+    description: 'Complete home improvement solutions',
+    features: [
+      'Room additions',
+      'Flooring installation',
+      'Window & door replacement',
+      'Siding installation',
+      'Deck & patio construction',
+      'Interior & exterior painting'
+    ]
+  }
+];
+
+export const COMPANY_STATS = {
+  projects: '250+',
+  years: '15+',
+  rating: '4.8★',
+  availability: '24/7',
+};
+
+export const TESTIMONIALS = [
+  {
+    name: 'Sarah M.',
+    location: 'Orlando',
+    rating: 5,
+    review: 'Exceptional work on our roof replacement. Professional, timely, and great communication throughout the project. They handled everything with our insurance company.'
+  },
+  {
+    name: 'John D.',
+    location: 'Leesburg',
+    rating: 5,
+    review: 'Transformed our kitchen beyond our expectations. The attention to detail was incredible. Highly recommend Shakcon Properties!'
+  },
+  {
+    name: 'Maria G.',
+    location: 'Winter Park',
+    rating: 5,
+    review: 'Quick response to our storm damage. They were at our house the same day and had a tarp up immediately. Excellent service!'
+  }
+];
+
+export const CERTIFICATIONS = [
+  { name: 'FCRC Registered', image: '/fcrc.png' },
+  { name: 'Lead Safe Certified', image: '/lead-safe.png' },
+  { name: 'IBBC Member', image: '/ibbc.png' },
+  { name: 'BBB Accredited', image: '/BBB.png' }
+];
