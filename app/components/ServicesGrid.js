@@ -6,19 +6,19 @@ export default function ServicesGrid() {
     {
       title: 'Roofing Excellence',
       description: 'Full residential roof repair, replacement, and inspections. We work with all major insurance companies.',
-      image: '/roof.jpg',
+      image: '/roofing.jpg',
       features: ['Asphalt Shingles', 'Metal Roofing', 'Tile & Slate', 'Emergency Repairs']
     },
     {
-      title: 'Kitchen Remodeling',
-      description: 'Transform your kitchen with modern designs, custom cabinets, and premium finishes.',
-      image: '/kitchen.jpg',
-      features: ['Custom Cabinetry', 'Granite/Quartz Countertops', 'Island Installation', 'Modern Appliances']
+      title: 'Flooring',
+      description: 'Tile, wood, laminate and more - expert installation & repairs',
+      image: '/flooring.jpg',
+      features: ['Hardwood Flooring', 'Tile Installation', 'Laminate & Vinyl', 'Floor Refinishing']
     },
     {
       title: 'Restoration Services',
       description: 'Storm damage? Fire or water cleanup? We provide 24/7 emergency restoration services.',
-      image: '/window.png',
+      image: '/restoration.jpg',
       features: ['Water Damage Restoration', 'Storm Damage Repair', 'Fire Damage Cleanup', 'Mold Remediation']
     }
   ];
@@ -33,19 +33,21 @@ export default function ServicesGrid() {
           </p>
         </div>
         
-        <div className="card-grid grid-cols-1 md:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {services.map((service, index) => (
-            <div key={index} className="card">
-              <Image 
-                src={service.image} 
-                alt={service.title} 
-                width={400} 
-                height={250} 
-                className="w-full h-48 object-cover rounded-lg mb-4" 
-              />
-              <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
-              <ul className="text-sm text-gray-500 space-y-1">
+            <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
+              <div className="w-32 h-32 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                <Image 
+                  src={service.image} 
+                  alt={service.title} 
+                  width={120} 
+                  height={120} 
+                  className="rounded-full object-cover w-full h-full" 
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
+              <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+              <ul className="text-xs text-gray-500 space-y-1">
                 {service.features.map((feature, idx) => (
                   <li key={idx}>• {feature}</li>
                 ))}
@@ -57,11 +59,17 @@ export default function ServicesGrid() {
         <div className="mt-10 text-center">
           <h3 className="text-2xl font-semibold mb-6">We Also Specialize In:</h3>
           <div className="flex flex-wrap justify-center gap-3">
+            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Kitchen Remodeling</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Bathroom Remodeling</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Flooring Installation</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Window & Door Replacement</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Siding Installation</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Deck & Patio Construction</span>
+            <a 
+              href="/financing" 
+              className="bg-yellow-400 text-black px-4 py-2 rounded-full shadow-md text-sm hover:bg-yellow-500 transition-colors duration-300 font-semibold"
+            >
+              💳 Financing Available
+            </a>
           </div>
         </div>
       </div>

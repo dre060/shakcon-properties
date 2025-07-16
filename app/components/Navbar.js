@@ -58,7 +58,7 @@ export default function Navbar() {
               Contact
             </Link>
             <a 
-              href="tel:3529335181" 
+              href="tel:3526937691" 
               className="btn btn-primary text-sm shadow-md"
             >
               Call Now
@@ -107,10 +107,10 @@ export default function Navbar() {
             Contact
           </Link>
           <a 
-            href="tel:3529335181" 
+            href="tel:3526937691" 
             className="block text-center btn btn-primary mt-4"
           >
-            📞 Call Now: (352) 933-5181
+            📞 Call Now: (352) 693-7691
           </a>
         </div>
       </div>

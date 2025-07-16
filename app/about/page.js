@@ -35,33 +35,6 @@ export default function AboutPage() {
     { number: "24/7", label: "Emergency Service", icon: "🚨" }
   ];
 
-  const teamMembers = [
-    {
-      name: "Mike Johnson",
-      role: "Founder & Lead Contractor",
-      experience: "15+ years",
-      specialties: ["Roofing", "Project Management"],
-      description: "Military veteran with extensive construction experience across residential and commercial projects.",
-      image: "/team-member-1.jpg"
-    },
-    {
-      name: "Sarah Rodriguez",
-      role: "Design Specialist",
-      experience: "8+ years", 
-      specialties: ["Kitchen Design", "Interior Renovation"],
-      description: "Certified interior designer specializing in functional and beautiful home transformations.",
-      image: "/team-member-2.jpg"
-    },
-    {
-      name: "David Chen",
-      role: "Project Supervisor",
-      experience: "12+ years",
-      specialties: ["Quality Control", "Customer Relations"],
-      description: "Ensures every project meets our high standards for quality and customer satisfaction.",
-      image: "/team-member-3.jpg"
-    }
-  ];
-
   const values = [
     {
       title: "Integrity",
@@ -89,22 +62,17 @@ export default function AboutPage() {
     {
       title: "Florida Certified Residential Contractor",
       description: "Licensed and bonded by the State of Florida",
-      icon: "/file.png"
+      icon: "/fcrc.png"
     },
     {
       title: "EPA Lead-Safe Certified Firm",
       description: "Certified for safe renovation practices",
-      icon: "/globe.png"
+      icon: "/lead-safe.png"
     },
     {
       title: "Better Business Bureau Accredited",
       description: "A+ rating with BBB",
-      icon: "/vercel.png"
-    },
-    {
-      title: "OSHA Safety Certified",
-      description: "Committed to workplace safety standards",
-      icon: "/next.png"
+      icon: "/bbb.png"
     }
   ];
 
@@ -123,7 +91,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
           <h1 className="text-5xl font-bold mb-6 animate-fade-in-up">About Shakcon Properties</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto animate-fade-in-up">
-            A veteran-owned, Florida-certified residential contractor dedicated to transforming homes 
+            A Florida-certified residential contractor dedicated to transforming homes 
             with quality craftsmanship, integrity, and exceptional service throughout Central Florida.
           </p>
         </div>
@@ -149,7 +117,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story Section */}
+      {/* Company Overview Section */}
       <section 
         id="story-section"
         data-animate
@@ -160,16 +128,16 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
+              <h2 className="text-4xl font-bold text-gray-900">Our Company</h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Founded by military veteran Mike Johnson, Shakcon Properties began with a simple mission: 
-                  to provide honest, reliable home restoration services to families throughout Central Florida.
+                  Shakcon Properties is a Florida-certified residential contractor committed to providing 
+                  high-quality home improvement and restoration services throughout Central Florida.
                 </p>
                 <p>
-                  After serving our country for over a decade, Mike brought the same values of discipline, 
-                  attention to detail, and commitment to excellence to the construction industry. What started 
-                  as a one-man operation has grown into a trusted team of skilled professionals.
+                  Our experienced team brings decades of combined expertise to every project, from routine 
+                  maintenance and repairs to complete home renovations. We specialize in delivering exceptional 
+                  results that enhance both the beauty and value of your property.
                 </p>
                 <p>
                   Today, we're proud to be a Florida-certified residential contractor with hundreds of 
@@ -178,9 +146,6 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 pt-4">
-                <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-semibold">
-                  🇺🇸 Veteran-Owned
-                </span>
                 <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
                   🏆 Licensed & Insured
                 </span>
@@ -190,32 +155,14 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <Image 
-                  src="/roof.jpg" 
-                  alt="Quality roofing work" 
-                  width={300} 
-                  height={400}
-                  className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-                <Image 
-                  src="/window.png" 
-                  alt="Home restoration" 
-                  width={300} 
-                  height={300}
-                  className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
-              <div className="pt-8">
-                <Image 
-                  src="/kitchen.jpg" 
-                  alt="Kitchen remodeling" 
-                  width={300} 
-                  height={500}
-                  className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
+            <div className="flex justify-center">
+              <Image 
+                src="/kitchen.jpg" 
+                alt="Kitchen remodeling" 
+                width={400} 
+                height={500}
+                className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
             </div>
           </div>
         </div>
@@ -254,60 +201,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section 
-        id="team-section"
-        data-animate
-        className={`py-20 px-6 bg-gray-50 transition-all duration-1000 ${
-          isVisible['team-section'] ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-10'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our skilled professionals bring decades of combined experience to every project.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group"
-              >
-                <div className="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl text-gray-400">👨‍🔧</div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-yellow-600 font-semibold mb-2">{member.role}</p>
-                  <p className="text-sm text-gray-600 mb-3">{member.experience}</p>
-                  <p className="text-gray-700 mb-4 leading-relaxed">{member.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {member.specialties.map((specialty, idx) => (
-                      <span 
-                        key={idx}
-                        className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
-                      >
-                        {specialty}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Certifications Section */}
       <section 
         id="certifications-section"
         data-animate
-        className={`py-20 px-6 bg-white transition-all duration-1000 ${
+        className={`py-20 px-6 bg-gray-50 transition-all duration-1000 ${
           isVisible['certifications-section'] ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-10'
         }`}
       >
@@ -319,13 +217,13 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
               <div 
                 key={index}
                 className="text-center group hover:scale-105 transition-transform duration-300"
               >
-                <div className="bg-gray-50 p-6 rounded-2xl mb-4 group-hover:bg-gray-100 transition-colors duration-300">
+                <div className="bg-white p-6 rounded-2xl mb-4 group-hover:bg-gray-100 transition-colors duration-300">
                   <Image 
                     src={cert.icon}
                     alt={cert.title}

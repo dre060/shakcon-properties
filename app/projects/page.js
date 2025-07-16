@@ -11,21 +11,21 @@ const projects = [
     alt: 'Custom home under construction',
     category: 'New Construction',
     title: 'Modern Custom Home Build',
-    location: 'Winter Park, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project2.jpg', 
     alt: 'Modern luxury bathroom renovation',
     category: 'Bathroom Remodel',
     title: 'Spa-Inspired Master Bath',
-    location: 'Orlando, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project3.jpg', 
     alt: 'Double vanity and tile walk-in shower',
     category: 'Bathroom Remodel',
     title: 'Double Vanity Installation',
-    location: 'Leesburg, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project4.jpg', 
@@ -39,35 +39,98 @@ const projects = [
     alt: 'Outdoor patio with TV and fireplace',
     category: 'Outdoor Living',
     title: 'Entertainment Patio Design',
-    location: 'Lake Mary, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project6.jpg', 
     alt: 'Marble bathroom under renovation',
     category: 'Bathroom Remodel',
     title: 'Luxury Marble Installation',
-    location: 'Windermere, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project7.jpg', 
     alt: 'Built-in cabinetry and flooring',
     category: 'Interior Remodel',
     title: 'Custom Cabinet & Flooring',
-    location: 'Mount Dora, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project8.jpg', 
     alt: 'Fully renovated bathroom with marble tile',
     category: 'Bathroom Remodel',
     title: 'Complete Bath Transformation',
-    location: 'Eustis, FL'
+    location: 'The Villages, FL'
   },
   { 
     src: '/project9.jpg', 
     alt: 'Closet door installation',
     category: 'Interior Remodel',
     title: 'Custom Closet System',
-    location: 'Clermont, FL'
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/Project10.jpg', 
+    alt: 'Professional bathroom tile installation in progress',
+    category: 'Bathroom Remodel',
+    title: 'Precision Tile Installation',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/Project11.jpg', 
+    alt: 'Luxury bathroom with subway tiles and custom bench',
+    category: 'Bathroom Remodel',
+    title: 'Spa-Style Bathroom Renovation',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project12.jpg', 
+    alt: 'Custom walk-in closet with organized storage systems',
+    category: 'Interior Remodel',
+    title: 'Master Closet Organization',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project13.jpg', 
+    alt: 'Modern walk-in shower with glass enclosure',
+    category: 'Bathroom Remodel',
+    title: 'Contemporary Shower Installation',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project14.jpg', 
+    alt: 'Elegant glass shower with black hardware fixtures',
+    category: 'Bathroom Remodel',
+    title: 'Frameless Glass Shower Upgrade',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project15.jpg', 
+    alt: 'Completed single family home with professional landscaping',
+    category: 'New Construction',
+    title: 'Custom Home Build',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project16.jpg', 
+    alt: 'Bright interior room with tile flooring and corner windows',
+    category: 'Interior Remodel',
+    title: 'Open Concept Living Space',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project17.jpg', 
+    alt: 'Luxury bathroom with marble-look tile and mosaic flooring',
+    category: 'Bathroom Remodel',
+    title: 'Marble-Inspired Bath Design',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project18.jpg', 
+    alt: 'Complete bathroom renovation with premium finishes',
+    category: 'Bathroom Remodel',
+    title: 'Premium Bathroom Transformation',
+    location: 'The Villages, FL'
   },
 ];
 
@@ -150,7 +213,7 @@ export default function ProjectsPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Project Statistics</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-yellow-400 mb-2">250+</div>
+              <div className="text-5xl font-bold text-yellow-400 mb-2">300+</div>
               <p className="text-gray-300">Projects Completed</p>
             </div>
             <div>
@@ -182,7 +245,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* Modal for selected project (optional enhancement) */}
+      {/* Modal for selected project */}
       {selectedProject && (
         <div 
           className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"

@@ -50,7 +50,7 @@ export default function ContactPage() {
         setSubmitMessage(data.message || 'Something went wrong. Please try again.');
       }
     } catch (error) {
-      setSubmitMessage('Error sending message. Please call us directly at (352) 933-5181');
+      setSubmitMessage('Error sending message. Please call us directly at (352) 693-7691');
     } finally {
       setIsSubmitting(false);
       // Clear message after 5 seconds
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Phone</h3>
-                  <a href="tel:3529335181" className="text-gray-700 hover:text-yellow-500 text-lg">(352) 933-5181</a>
+                  <a href="tel:3526937691" className="text-gray-700 hover:text-yellow-500 text-lg">(352) 693-7691</a>
                 </div>
               </div>
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Email</h3>
-                  <a href="mailto:info@shakcon.com" className="text-gray-700 hover:text-yellow-500 text-lg">info@shakcon.com</a>
+                  <a href="mailto:Shakconproperties@gmail.com" className="text-gray-700 hover:text-yellow-500 text-lg">Shakconproperties@gmail.com</a>
                 </div>
               </div>
 
@@ -243,11 +243,11 @@ export default function ContactPage() {
             Our emergency response team is available around the clock to protect your home.
           </p>
           <a 
-            href="tel:3529335181" 
+            href="tel:3526937691" 
             className="inline-flex items-center gap-3 bg-yellow-400 text-black font-bold py-4 px-8 rounded-full hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105"
           >
             <span className="text-2xl">📞</span>
-            Call Emergency Line: (352) 933-5181
+            Call Emergency Line: (352) 693-7691
           </a>
         </div>
       </section>

@@ -6,20 +6,6 @@ import Link from 'next/link';
 
 const services = [
   {
-    title: 'Roofing Services',
-    image: '/roof.jpg',
-    description: 'Complete roofing solutions for your home',
-    features: [
-      'Complete roof replacement',
-      'Roof repair and maintenance',
-      'Storm damage assessment',
-      'Insurance claim assistance',
-      'Leak detection and repair',
-      'Gutter installation'
-    ],
-    details: 'Our roofing experts have over 15 years of experience working with all types of roofing materials including asphalt shingles, metal roofing, tile, and flat roofs.'
-  },
-  {
     title: 'Kitchen Remodeling',
     image: '/kitchen.jpg',
     description: 'Transform your kitchen into a modern masterpiece',
@@ -35,7 +21,7 @@ const services = [
   },
   {
     title: 'Bathroom Renovation',
-    image: '/hero.jpg',
+    image: '/project2.jpg',
     description: 'Create your dream bathroom retreat',
     features: [
       'Complete bathroom remodels',
@@ -49,7 +35,7 @@ const services = [
   },
   {
     title: 'Storm Restoration',
-    image: '/window.png',
+    image: '/restoration.jpg',
     description: '24/7 emergency restoration services',
     features: [
       'Emergency tarping & board-up',
@@ -62,8 +48,8 @@ const services = [
     details: 'When disaster strikes, we respond quickly to minimize damage and restore your property. We work directly with insurance companies to streamline the claims process.'
   },
   {
-    title: 'General Contracting',
-    image: '/roof.jpg',
+    title: 'Residential Contracting',
+    image: '/hero.jpg',
     description: 'Complete home improvement solutions',
     features: [
       'Room additions',
@@ -74,6 +60,20 @@ const services = [
       'Interior & exterior painting'
     ],
     details: 'As a full-service contractor, we can handle any home improvement project from start to finish, ensuring quality results every time.'
+  },
+  {
+    title: 'Roofing Services',
+    image: '/roof.jpg',
+    description: 'Complete roofing solutions for your home',
+    features: [
+      'Complete roof replacement',
+      'Roof repair and maintenance',
+      'Storm damage assessment',
+      'Insurance claim assistance',
+      'Leak detection and repair',
+      'Gutter installation'
+    ],
+    details: 'Our roofing experts have over 15 years of experience working with all types of roofing materials including asphalt shingles, metal roofing, tile, and flat roofs.'
   }
 ];
 
@@ -188,9 +188,9 @@ export default function ServicesPage() {
             <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">Lake Mary</span>
           </div>
           <p className="text-lg text-gray-300 mb-8">And all surrounding areas within 50 miles</p>
-          <a href="tel:3529335181" className="inline-flex items-center gap-3 bg-yellow-400 text-black font-bold py-4 px-8 rounded-full hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105">
+          <a href="tel:3526937691" className="inline-flex items-center gap-3 bg-yellow-400 text-black font-bold py-4 px-8 rounded-full hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105">
             <span className="text-2xl">📞</span>
-            Call for Service: (352) 933-5181
+            Call for Service: (352) 693-7691
           </a>
         </div>
       </section>

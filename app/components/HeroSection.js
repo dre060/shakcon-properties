@@ -35,7 +35,7 @@ export default function HeroSection() {
                 Get a Free Estimate
               </a>
               <a
-                href="tel:3529335181"
+                href="tel:3526937691"
                 className="btn bg-white/20 backdrop-blur-sm text-white border-2 border-white hover:bg-white hover:text-black px-8 py-4 w-full sm:w-auto"
               >
                 📞 Call Now

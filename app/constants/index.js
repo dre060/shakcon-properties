@@ -3,13 +3,13 @@ export const COMPANY_INFO = {
   name: 'Shakcon Properties',
   tagline: 'For All Your Home Restoration Needs',
   description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity.',
-  license: 'CGC1534303',
+  license: 'CRC1334828',
 };
 
 export const CONTACT_INFO = {
-  phone: '(352) 933-5181',
-  phoneRaw: '3529335181',
-  email: 'info@shakcon.com',
+  phone: '(352) 693-7691',
+  phoneRaw: '3526937691',
+  email: 'Shakconproperties@gmail.com',
   address: 'Central Florida',
 };
 
@@ -82,7 +82,7 @@ export const SERVICES = [
     ]
   },
   {
-    title: 'General Contracting',
+    title: 'Residential Contracting',
     description: 'Complete home improvement solutions',
     features: [
       'Room additions',
@@ -126,6 +126,5 @@ export const TESTIMONIALS = [
 export const CERTIFICATIONS = [
   { name: 'FCRC Registered', image: '/fcrc.png' },
   { name: 'Lead Safe Certified', image: '/lead-safe.png' },
-  { name: 'IBBC Member', image: '/ibbc.png' },
   { name: 'BBB Accredited', image: '/BBB.png' }
 ];
