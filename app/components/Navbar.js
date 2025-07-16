@@ -27,8 +27,8 @@ export default function Navbar() {
               <Image 
                 src="/logo.jpg" 
                 alt="Shakcon Logo" 
-                width={50} 
-                height={50} 
+                width={70} 
+                height={70} 
                 className="rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300" 
               />
               <div className="flex flex-col">
@@ -36,6 +36,7 @@ export default function Navbar() {
                   Shakcon Properties
                 </span>
                 <span className="text-xs text-gray-600 hidden sm:block">Licensed • Insured • Florida Certified</span>
+                <span className="text-xs text-gray-500 hidden sm:block">License #: CRC1334828</span>
               </div>
             </div>
           </Link>

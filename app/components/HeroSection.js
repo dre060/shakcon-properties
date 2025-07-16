@@ -29,7 +29,7 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
               <a
-                href="#contact"
+                href="/contact"
                 className="btn btn-primary text-lg px-8 py-4 shadow-lg w-full sm:w-auto"
               >
                 Get a Free Estimate
