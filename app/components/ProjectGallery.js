@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function ProjectGallery({ showAll = false }) {
   const projects = [
     {
-      image: '/project_21.jpg',
+      image: '/project15.jpg',
       title: 'New Home Construction',
       location: 'The Villages, FL'
     },
