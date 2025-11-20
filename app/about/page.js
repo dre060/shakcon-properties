@@ -65,6 +65,11 @@ export default function AboutPage() {
       icon: "/fcrc.png"
     },
     {
+      title: "203k Renovation Specialist",
+      description: "FHA 203k certified for renovation financing",
+      icon: "/203k.png"
+    },
+    {
       title: "EPA Lead-Safe Certified Firm",
       description: "Certified for safe renovation practices",
       icon: "/lead-safe.png"
@@ -94,6 +99,9 @@ export default function AboutPage() {
             A Florida-certified residential contractor dedicated to transforming homes 
             with quality craftsmanship, integrity, and exceptional service throughout Central Florida.
           </p>
+          <div className="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold">
+            🏆 203k Certified Contractor
+          </div>
         </div>
       </section>
 
@@ -140,6 +148,10 @@ export default function AboutPage() {
                   results that enhance both the beauty and value of your property.
                 </p>
                 <p>
+                  As a 203k certified contractor, we help homebuyers finance their renovation projects through 
+                  FHA 203k loans, making home ownership and improvement more accessible.
+                </p>
+                <p>
                   Today, we're proud to be a Florida-certified residential contractor with hundreds of 
                   successful projects under our belt. From emergency storm repairs to complete home 
                   renovations, we treat every project with the care and attention it deserves.
@@ -151,6 +163,9 @@ export default function AboutPage() {
                 </span>
                 <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">
                   ⭐ 4.8 Star Rating
+                </span>
+                <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-semibold">
+                  🏠 203k Certified
                 </span>
               </div>
             </div>
@@ -217,7 +232,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {certifications.map((cert, index) => (
               <div 
                 key={index}

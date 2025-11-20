@@ -62,18 +62,18 @@ const services = [
     details: 'As a full-service contractor, we can handle any home improvement project from start to finish, ensuring quality results every time.'
   },
   {
-    title: 'Roofing Services',
-    image: '/roof.jpg',
-    description: 'Complete roofing solutions for your home',
+    title: '203k Renovation Specialist',
+    image: '/project1.jpg',
+    description: 'FHA 203k certified contractor for renovation financing',
     features: [
-      'Complete roof replacement',
-      'Roof repair and maintenance',
-      'Storm damage assessment',
-      'Insurance claim assistance',
-      'Leak detection and repair',
-      'Gutter installation'
+      '203k loan consultation & guidance',
+      'Complete home renovations',
+      'Historic home restoration',
+      'Energy-efficient upgrades',
+      'Code compliance expertise',
+      'Streamlined & Standard 203k projects'
     ],
-    details: 'Our roofing experts have over 15 years of experience working with all types of roofing materials including asphalt shingles, metal roofing, tile, and flat roofs.'
+    details: 'As a 203k certified contractor, we specialize in helping homebuyers finance their renovation projects through FHA 203k loans. We guide you through the entire process from consultation to completion.'
   }
 ];
 
@@ -85,6 +85,9 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6 animate-fade-in">Our Services</h1>
           <p className="text-xl text-gray-300">Comprehensive Home Improvement Solutions</p>
+          <div className="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold">
+            🏆 203k Certified Contractor
+          </div>
         </div>
       </section>
 
@@ -94,8 +97,8 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-bold mb-6">What We Offer</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             From emergency repairs to complete home renovations, Shakcon Properties provides comprehensive 
-            services to meet all your home improvement needs. Our experienced team delivers quality 
-            craftsmanship on every project.
+            services to meet all your home improvement needs. As a 203k certified contractor, we can help you 
+            finance your renovation through FHA 203k loans.
           </p>
         </div>
 
@@ -149,10 +152,10 @@ export default function ServicesPage() {
             </div>
             <div className="text-center">
               <div className="bg-yellow-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">📅</span>
+                <span className="text-3xl">🏆</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">On-Time Completion</h3>
-              <p className="text-gray-600">We respect your time and stick to our schedules</p>
+              <h3 className="text-xl font-semibold mb-2">203k Certified</h3>
+              <p className="text-gray-600">Specialized expertise in FHA 203k renovation loans</p>
             </div>
             <div className="text-center">
               <div className="bg-yellow-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">

@@ -3,7 +3,7 @@ const config = {
   company: {
     name: 'Shakcon Properties',
     tagline: 'For All Your Home Restoration Needs',
-    description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity.',
+    description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity. 203k Renovation Specialist.',
     license: 'CRC1334828',
   },
   contact: {
@@ -38,7 +38,7 @@ const config = {
     'Window & Door Replacement',
     'Siding Installation',
     'Deck & Patio Construction',
-    'Roofing Installation & Repair',
+    '203k Renovation Specialist',
   ],
   stats: {
     projects: '250+',

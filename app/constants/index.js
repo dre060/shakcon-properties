@@ -2,7 +2,7 @@
 export const COMPANY_INFO = {
   name: 'Shakcon Properties',
   tagline: 'For All Your Home Restoration Needs',
-  description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity.',
+  description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity. 203k Renovation Specialist.',
   license: 'CRC1334828',
 };
 
@@ -33,18 +33,6 @@ export const SERVICE_AREAS = [
 ];
 
 export const SERVICES = [
-  {
-    title: 'Roofing Services',
-    description: 'Complete roofing solutions for your home',
-    features: [
-      'Complete roof replacement',
-      'Roof repair and maintenance',
-      'Storm damage assessment',
-      'Insurance claim assistance',
-      'Leak detection and repair',
-      'Gutter installation'
-    ]
-  },
   {
     title: 'Kitchen Remodeling',
     description: 'Transform your kitchen into a modern masterpiece',
@@ -92,6 +80,18 @@ export const SERVICES = [
       'Deck & patio construction',
       'Interior & exterior painting'
     ]
+  },
+  {
+    title: '203k Renovation Specialist',
+    description: 'FHA 203k certified contractor for renovation financing',
+    features: [
+      '203k loan consultation',
+      'Complete home renovations',
+      'Historic home restoration',
+      'Energy-efficient upgrades',
+      'Code compliance expertise',
+      'Streamlined & Standard 203k'
+    ]
   }
 ];
 
@@ -107,7 +107,7 @@ export const TESTIMONIALS = [
     name: 'Sarah M.',
     location: 'Orlando',
     rating: 5,
-    review: 'Exceptional work on our roof replacement. Professional, timely, and great communication throughout the project. They handled everything with our insurance company.'
+    review: 'Exceptional work on our home renovation. Professional, timely, and great communication throughout the project. They handled everything with our 203k loan.'
   },
   {
     name: 'John D.',
@@ -125,6 +125,7 @@ export const TESTIMONIALS = [
 
 export const CERTIFICATIONS = [
   { name: 'FCRC Registered', image: '/fcrc.png' },
+  { name: '203k Certified', image: '/203k.png' },
   { name: 'Lead Safe Certified', image: '/lead-safe.png' },
   { name: 'BBB Accredited', image: '/BBB.png' }
 ];

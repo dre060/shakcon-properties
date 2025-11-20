@@ -15,6 +15,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-4">{COMPANY_INFO.description}</p>
             <div className="flex gap-3">
               <Image src="/fcrc.png" alt="FCRC" width={30} height={30} className="object-contain opacity-70" />
+              <Image src="/203k.png" alt="203k Certified" width={30} height={30} className="object-contain opacity-70" />
               <Image src="/BBB.png" alt="BBB" width={30} height={30} className="object-contain opacity-70" />
             </div>
           </div>
@@ -34,11 +35,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>Roofing Installation & Repair</li>
               <li>Kitchen Remodeling</li>
               <li>Bathroom Renovation</li>
               <li>Storm Damage Restoration</li>
               <li>General Contracting</li>
+              <li>203k Renovation Specialist</li>
             </ul>
           </div>
           
@@ -54,7 +55,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} {COMPANY_INFO.name}. All rights reserved. | Licensed & Insured | {COMPANY_INFO.license}</p>
+          <p>&copy; {currentYear} {COMPANY_INFO.name}. All rights reserved. | Licensed & Insured | {COMPANY_INFO.license} | 203k Certified</p>
         </div>
       </div>
     </footer>

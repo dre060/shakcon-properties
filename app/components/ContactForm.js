@@ -18,12 +18,12 @@ export default function ContactForm() {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const services = [
-    'Roofing',
     'Kitchen Remodeling', 
     'Bathroom Renovation',
     'Flooring',
     'Storm Damage Restoration',
     'General Contracting',
+    '203k Renovation',
     'Emergency Repair',
     'Other'
   ];

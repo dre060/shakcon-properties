@@ -4,22 +4,22 @@ import Image from 'next/image';
 export default function ServicesGrid() {
   const services = [
     {
-      title: 'Roofing Excellence',
-      description: 'Full residential roof repair, replacement, and inspections. We work with all major insurance companies.',
-      image: '/roofing.jpg',
-      features: ['Asphalt Shingles', 'Metal Roofing', 'Tile & Slate', 'Emergency Repairs']
+      title: 'Kitchen & Bath Remodeling',
+      description: 'Complete kitchen and bathroom transformations with expert craftsmanship',
+      image: '/flooring.jpg',
+      features: ['Custom Cabinets', 'Granite Countertops', 'Tile Installation', 'Fixture Upgrades']
     },
     {
-      title: 'Flooring',
+      title: 'Flooring & Interior',
       description: 'Tile, wood, laminate and more - expert installation & repairs',
       image: '/flooring.jpg',
       features: ['Hardwood Flooring', 'Tile Installation', 'Laminate & Vinyl', 'Floor Refinishing']
     },
     {
-      title: 'Restoration Services',
-      description: 'Storm damage? Fire or water cleanup? We provide 24/7 emergency restoration services.',
+      title: '203k Renovation Services',
+      description: 'FHA 203k certified contractor - we handle all renovation financing requirements',
       image: '/restoration.jpg',
-      features: ['Water Damage Restoration', 'Storm Damage Repair', 'Fire Damage Cleanup', 'Mold Remediation']
+      features: ['203k Loan Consultation', 'Complete Renovations', 'Code Compliance', 'Streamlined & Standard 203k']
     }
   ];
 
@@ -64,6 +64,9 @@ export default function ServicesGrid() {
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Window & Door Replacement</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Siding Installation</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Deck & Patio Construction</span>
+            <span className="bg-yellow-400 text-black px-4 py-2 rounded-full shadow-md text-sm font-semibold">
+              🏆 203k Certified Contractor
+            </span>
             <a 
               href="/financing" 
               className="bg-yellow-400 text-black px-4 py-2 rounded-full shadow-md text-sm hover:bg-yellow-500 transition-colors duration-300 font-semibold"
