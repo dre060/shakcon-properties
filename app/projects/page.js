@@ -132,27 +132,6 @@ const projects = [
     title: 'Premium Bathroom Transformation',
     location: 'The Villages, FL'
   },
-  { 
-    src: '/project_19.jpg', 
-    alt: 'Beautiful dining room with waterfront views and modern finishes',
-    category: 'Interior Remodel',
-    title: 'Dining Room Transformation',
-    location: 'The Villages, FL'
-  },
-  { 
-    src: '/project_20.jpg', 
-    alt: 'Outdoor patio with modern sliding glass doors and covered area',
-    category: 'Outdoor Living',
-    title: 'Modern Patio Construction',
-    location: 'The Villages, FL'
-  },
-  { 
-    src: '/project_21.jpg', 
-    alt: 'Custom home construction with freshly poured concrete driveway',
-    category: 'New Construction',
-    title: 'New Home Construction',
-    location: 'The Villages, FL'
-  },
 ];
 
 const categories = ['All', 'New Construction', 'Bathroom Remodel', 'Interior Remodel', 'Outdoor Living'];
