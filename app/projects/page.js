@@ -70,14 +70,14 @@ const projects = [
     location: 'The Villages, FL'
   },
   { 
-    src: '/Project10.jpg', 
+    src: '/project10.jpg', 
     alt: 'Professional bathroom tile installation in progress',
     category: 'Bathroom Remodel',
     title: 'Precision Tile Installation',
     location: 'The Villages, FL'
   },
   { 
-    src: '/Project11.jpg', 
+    src: '/project11.jpg', 
     alt: 'Luxury bathroom with subway tiles and custom bench',
     category: 'Bathroom Remodel',
     title: 'Spa-Style Bathroom Renovation',
@@ -133,21 +133,21 @@ const projects = [
     location: 'The Villages, FL'
   },
   { 
-    src: '/project_19.jpg', 
+    src: '/project19.jpg', 
     alt: 'Beautiful dining room with waterfront views and modern finishes',
     category: 'Interior Remodel',
     title: 'Dining Room Transformation',
     location: 'The Villages, FL'
   },
   { 
-    src: '/project_20.jpg', 
+    src: '/project20.jpg', 
     alt: 'Outdoor patio with modern sliding glass doors and covered area',
     category: 'Outdoor Living',
     title: 'Modern Patio Construction',
     location: 'The Villages, FL'
   },
   { 
-    src: '/project_21.jpg', 
+    src: '/project21.jpg', 
     alt: 'Custom home construction with freshly poured concrete driveway',
     category: 'New Construction',
     title: 'New Home Construction',
@@ -237,7 +237,7 @@ export default function ProjectsPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Project Statistics</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-yellow-400 mb-2">300+</div>
+              <div className="text-5xl font-bold text-yellow-400 mb-2">500+</div>
               <p className="text-gray-300">Projects Completed</p>
             </div>
             <div>
