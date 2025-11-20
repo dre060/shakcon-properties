@@ -30,10 +30,13 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Who We Are</h2>
               <p className="mb-4 text-lg leading-relaxed text-gray-700">
-                <strong>{COMPANY_INFO.name}</strong> is a Florida-licensed and certified residential contractor dedicated to quality craftsmanship, integrity, and client satisfaction. With years of hands-on experience in roofing, remodeling, and property restoration, we bring your vision to life.
+                <strong>{COMPANY_INFO.name}</strong> is a Florida-licensed and certified residential contractor dedicated to quality craftsmanship, integrity, and client satisfaction. With years of hands-on experience in remodeling and property restoration, we bring your vision to life.
               </p>
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
                 Our commitment to excellence has earned us recognition as one of Central Florida's most trusted contractors. We combine traditional craftsmanship with modern techniques to deliver results that exceed expectations.
+              </p>
+              <p className="mb-6 text-lg leading-relaxed text-gray-700">
+                As a <strong>203k certified contractor</strong>, we specialize in helping homebuyers finance their renovation projects through FHA 203k loans, making home ownership and improvement more accessible.
               </p>
               <div className="flex flex-wrap gap-4">
                 {CERTIFICATIONS.map((cert, index) => (
@@ -63,17 +66,17 @@ export default function HomePage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
+                  <span className="text-blue-500 text-2xl mt-1">🏆</span>
+                  <div>
+                    <p className="text-lg font-semibold">203k Certified Contractor</p>
+                    <p className="text-gray-600 text-sm">Specialized expertise in FHA 203k renovation financing</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-2xl mt-1">⚡</span>
                   <div>
                     <p className="text-lg font-semibold">Prompt Project Completion</p>
                     <p className="text-gray-600 text-sm">We respect your time with realistic timelines</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-500 text-2xl mt-1">🏆</span>
-                  <div>
-                    <p className="text-lg font-semibold">Award-Winning Craftsmanship</p>
-                    <p className="text-gray-600 text-sm">Recognition for excellence in construction</p>
                   </div>
                 </li>
               </ul>

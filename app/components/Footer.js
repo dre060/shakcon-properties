@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex gap-3">
               <Image src="/fcrc.png" alt="FCRC" width={30} height={30} className="object-contain opacity-70" />
               <Image src="/203k.png" alt="203k Certified" width={30} height={30} className="object-contain opacity-70" />
-              <Image src="/BBB.png" alt="BBB" width={30} height={30} className="object-contain opacity-70" />
+              <Image src="/bbb.png" alt="BBB" width={30} height={30} className="object-contain opacity-70" />
             </div>
           </div>
           

@@ -127,5 +127,5 @@ export const CERTIFICATIONS = [
   { name: 'FCRC Registered', image: '/fcrc.png' },
   { name: '203k Certified', image: '/203k.png' },
   { name: 'Lead Safe Certified', image: '/lead-safe.png' },
-  { name: 'BBB Accredited', image: '/BBB.png' }
+  { name: 'BBB Accredited', image: '/bbb.png' }
 ];
