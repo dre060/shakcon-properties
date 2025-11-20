@@ -132,6 +132,27 @@ const projects = [
     title: 'Premium Bathroom Transformation',
     location: 'The Villages, FL'
   },
+  { 
+    src: '/project_19.jpg', 
+    alt: 'Beautiful dining room with waterfront views and modern finishes',
+    category: 'Interior Remodel',
+    title: 'Dining Room Transformation',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project_20.jpg', 
+    alt: 'Outdoor patio with modern sliding glass doors and covered area',
+    category: 'Outdoor Living',
+    title: 'Modern Patio Construction',
+    location: 'The Villages, FL'
+  },
+  { 
+    src: '/project_21.jpg', 
+    alt: 'Custom home construction with freshly poured concrete driveway',
+    category: 'New Construction',
+    title: 'New Home Construction',
+    location: 'The Villages, FL'
+  },
 ];
 
 const categories = ['All', 'New Construction', 'Bathroom Remodel', 'Interior Remodel', 'Outdoor Living'];
@@ -151,6 +172,9 @@ export default function ProjectsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6 animate-fade-in">Our Portfolio</h1>
           <p className="text-xl text-gray-300">Quality Craftsmanship in Every Project</p>
+          <div className="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold">
+            🏆 203k Certified Contractor
+          </div>
         </div>
       </section>
 
