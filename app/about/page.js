@@ -62,22 +62,27 @@ export default function AboutPage() {
     {
       title: "Florida Certified Residential Contractor",
       description: "Licensed and bonded by the State of Florida",
-      icon: "/fcrc.png"
+      icon: "/fcrc.png",
+      isImage: true
     },
     {
       title: "203k Renovation Specialist",
       description: "FHA 203k certified for renovation financing",
-      icon: "/203k.png"
+      icon: "/203k.png",
+      isImage: true
     },
     {
       title: "EPA Lead-Safe Certified Firm",
       description: "Certified for safe renovation practices",
-      icon: "/lead-safe.png"
+      icon: "/lead-safe.png",
+      isImage: true
     },
     {
       title: "Better Business Bureau Accredited",
-      description: "A+ rating with BBB",
-      icon: "/bbb.png"
+      description: "Accredited Since 03/10/2025",
+      isBBB: true,
+      bbbLink: "https://www.bbb.org/us/fl/fruitland-park/profile/remodel-contractors/shakcon-properties-llc-0733-235970271/#sealclick",
+      bbbSeal: "https://seal-centralflorida.bbb.org/seals/blue-seal-200-42-bbb-235970271.png"
     }
   ];
 
@@ -238,14 +243,29 @@ export default function AboutPage() {
                 key={index}
                 className="text-center group hover:scale-105 transition-transform duration-300"
               >
-                <div className="bg-white p-6 rounded-2xl mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                  <Image 
-                    src={cert.icon}
-                    alt={cert.title}
-                    width={80}
-                    height={80}
-                    className="mx-auto group-hover:scale-110 transition-transform duration-300"
-                  />
+                <div className="bg-white p-6 rounded-2xl mb-4 group-hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center min-h-[120px]">
+                  {cert.isBBB ? (
+                    <a 
+                      href={cert.bbbLink}
+                      target="_blank" 
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <img 
+                        src={cert.bbbSeal}
+                        alt="Shakcon Properties LLC BBB Business Review"
+                        style={{ border: 0 }}
+                        className="mx-auto group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </a>
+                  ) : (
+                    <Image 
+                      src={cert.icon}
+                      alt={cert.title}
+                      width={80}
+                      height={80}
+                      className="mx-auto group-hover:scale-110 transition-transform duration-300"
+                    />
+                  )}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{cert.title}</h3>
                 <p className="text-sm text-gray-600">{cert.description}</p>

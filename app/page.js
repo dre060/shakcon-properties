@@ -15,7 +15,7 @@ import {
   Stats,
   CTA 
 } from './components';
-import { COMPANY_INFO, CERTIFICATIONS } from './constants';
+import { COMPANY_INFO, CERTIFICATIONS, BBB_INFO } from './constants';
 
 export default function HomePage() {
   return (
@@ -38,11 +38,29 @@ export default function HomePage() {
               <p className="mb-6 text-lg leading-relaxed text-gray-700">
                 As a <strong>203k certified contractor</strong>, we specialize in helping homebuyers finance their renovation projects through FHA 203k loans, making home ownership and improvement more accessible.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 items-center">
                 {CERTIFICATIONS.map((cert, index) => (
                   <div key={index} className="text-center">
-                    <Image src={cert.image} alt={cert.name} width={70} height={70} className="object-contain mx-auto" />
-                    <p className="text-xs mt-1 font-medium">{cert.name.split(' ')[0]}</p>
+                    {cert.isBBB ? (
+                      <a 
+                        href={cert.bbbLink}
+                        target="_blank" 
+                        rel="nofollow noopener noreferrer"
+                      >
+                        <img 
+                          src={cert.bbbSeal}
+                          alt="Shakcon Properties LLC BBB Business Review"
+                          style={{ border: 0 }}
+                          className="h-[50px] w-auto mx-auto"
+                        />
+                        <p className="text-xs mt-1 font-medium">BBB</p>
+                      </a>
+                    ) : (
+                      <>
+                        <Image src={cert.image} alt={cert.name} width={70} height={70} className="object-contain mx-auto" />
+                        <p className="text-xs mt-1 font-medium">{cert.name.split(' ')[0]}</p>
+                      </>
+                    )}
                   </div>
                 ))}
               </div>

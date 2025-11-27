@@ -13,6 +13,18 @@ export const CONTACT_INFO = {
   address: 'Central Florida',
 };
 
+export const SOCIAL_MEDIA = {
+  facebook: 'https://www.facebook.com/share/1DG8x132zd/',
+  instagram: 'https://instagram.com/shakconproperties',
+  youtube: 'https://youtube.com/@shakconproperties',
+};
+
+export const BBB_INFO = {
+  profileUrl: 'https://www.bbb.org/us/fl/fruitland-park/profile/remodel-contractors/shakcon-properties-llc-0733-235970271/#sealclick',
+  sealUrl: 'https://seal-centralflorida.bbb.org/seals/blue-seal-200-42-bbb-235970271.png',
+  accreditedSince: '03/10/2025',
+};
+
 export const BUSINESS_HOURS = {
   weekday: 'Monday - Friday: 8:00 AM - 6:00 PM',
   saturday: 'Saturday: 9:00 AM - 4:00 PM',
@@ -127,5 +139,11 @@ export const CERTIFICATIONS = [
   { name: 'FCRC Registered', image: '/fcrc.png' },
   { name: '203k Certified', image: '/203k.png' },
   { name: 'Lead Safe Certified', image: '/lead-safe.png' },
-  { name: 'BBB Accredited', image: '/bbb.png' }
+  { 
+    name: 'BBB Accredited', 
+    image: '/bbb.png',
+    isBBB: true,
+    bbbLink: 'https://www.bbb.org/us/fl/fruitland-park/profile/remodel-contractors/shakcon-properties-llc-0733-235970271/#sealclick',
+    bbbSeal: 'https://seal-centralflorida.bbb.org/seals/blue-seal-200-42-bbb-235970271.png'
+  }
 ];
