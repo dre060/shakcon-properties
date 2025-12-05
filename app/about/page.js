@@ -60,12 +60,6 @@ export default function AboutPage() {
 
   const certifications = [
     {
-      title: "Florida Certified Residential Contractor",
-      description: "Licensed and bonded by the State of Florida",
-      icon: "/fcrc.png",
-      isImage: true
-    },
-    {
       title: "203k Renovation Specialist",
       description: "FHA 203k certified for renovation financing",
       icon: "/203k.png",
