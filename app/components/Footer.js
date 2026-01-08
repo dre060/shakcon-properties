@@ -73,6 +73,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-white transition">About</Link></li>
               <li><Link href="/services" className="hover:text-white transition">Services</Link></li>
               <li><Link href="/projects" className="hover:text-white transition">Projects</Link></li>
+              <li><Link href="/cabinets" className="hover:text-white transition">Cabinets <span className="text-red-400 text-xs">NEW</span></Link></li>
               <li><Link href="/financing" className="hover:text-white transition">Financing</Link></li>
               <li><Link href="/contact" className="hover:text-white transition">Contact</Link></li>
             </ul>
@@ -83,6 +84,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>Kitchen Remodeling</li>
               <li>Bathroom Renovation</li>
+              <li>Cabinet Sales & Installation</li>
               <li>Storm Damage Restoration</li>
               <li>General Contracting</li>
               <li>203k Renovation Specialist</li>

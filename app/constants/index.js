@@ -104,6 +104,17 @@ export const SERVICES = [
       'Code compliance expertise',
       'Streamlined & Standard 203k'
     ]
+  },
+  {
+    title: 'Cabinet Sales',
+    description: 'Premium kitchen cabinets direct to customers',
+    features: [
+      'Multiple collections & styles',
+      'Competitive pricing',
+      'Professional installation',
+      'Fast delivery',
+      'Showroom coming soon'
+    ]
   }
 ];
 

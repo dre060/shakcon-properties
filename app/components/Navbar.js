@@ -42,7 +42,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-5">
             <Link href="/" className="text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300">
               Home
             </Link>
@@ -54,6 +54,10 @@ export default function Navbar() {
             </Link>
             <Link href="/projects" className="text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300">
               Projects
+            </Link>
+            <Link href="/cabinets" className="text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300 flex items-center gap-1">
+              Cabinets
+              <span className="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold animate-pulse">NEW</span>
             </Link>
             <Link href="/contact" className="text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300">
               Contact
@@ -107,8 +111,8 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Hamburger */}
-          <div className="md:hidden flex items-center gap-3">
+          {/* Mobile - Social + Hamburger */}
+          <div className="lg:hidden flex items-center gap-3">
             {/* Mobile Social Icons */}
             <a 
               href="https://youtube.com/@shakconproperties" 
@@ -143,7 +147,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden bg-white shadow-lg transition-all duration-300 ${isOpen ? 'opacity-100 max-h-[500px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
+      <div className={`lg:hidden bg-white shadow-lg transition-all duration-300 ${isOpen ? 'opacity-100 max-h-[600px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
         <div className="container mx-auto px-4 py-4 space-y-3">
           <Link href="/" onClick={() => setIsOpen(false)} className="block text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300 py-2">
             Home
@@ -156,6 +160,10 @@ export default function Navbar() {
           </Link>
           <Link href="/projects" onClick={() => setIsOpen(false)} className="block text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300 py-2">
             Projects
+          </Link>
+          <Link href="/cabinets" onClick={() => setIsOpen(false)} className="flex items-center gap-2 text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300 py-2">
+            Cabinets
+            <span className="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold">NEW</span>
           </Link>
           <Link href="/contact" onClick={() => setIsOpen(false)} className="block text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300 py-2">
             Contact
