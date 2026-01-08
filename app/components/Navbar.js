@@ -42,7 +42,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden md:flex items-center gap-4">
             <Link href="/" className="text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300">
               Home
             </Link>
@@ -112,7 +112,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile - Social + Hamburger */}
-          <div className="lg:hidden flex items-center gap-3">
+          <div className="md:hidden flex items-center gap-3">
             {/* Mobile Social Icons */}
             <a 
               href="https://youtube.com/@shakconproperties" 
@@ -147,7 +147,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden bg-white shadow-lg transition-all duration-300 ${isOpen ? 'opacity-100 max-h-[600px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
+      <div className={`md:hidden bg-white shadow-lg transition-all duration-300 ${isOpen ? 'opacity-100 max-h-[600px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
         <div className="container mx-auto px-4 py-4 space-y-3">
           <Link href="/" onClick={() => setIsOpen(false)} className="block text-gray-800 font-medium hover:text-yellow-500 transition-colors duration-300 py-2">
             Home
