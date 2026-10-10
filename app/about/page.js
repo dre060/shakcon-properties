@@ -60,6 +60,14 @@ export default function AboutPage() {
 
   const certifications = [
     {
+      title: "IICRC Certified Firm",
+      description: "Company #70271552 · Valid through 12/31/2027 · Tap to view",
+      icon: "/iicrc-logo.png",
+      link: "/iicrc-certified-firm.jpg",
+      wide: true,
+      isImage: true
+    },
+    {
       title: "203k Renovation Specialist",
       description: "FHA 203k certified for renovation financing",
       icon: "/203k.png",
@@ -249,6 +257,16 @@ export default function AboutPage() {
                         alt="Shakcon Properties LLC BBB Business Review"
                         style={{ border: 0 }}
                         className="mx-auto group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </a>
+                  ) : cert.link ? (
+                    <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                      <Image 
+                        src={cert.icon}
+                        alt={cert.title}
+                        width={200}
+                        height={75}
+                        className="mx-auto h-auto w-[200px] group-hover:scale-110 transition-transform duration-300"
                       />
                     </a>
                   ) : (

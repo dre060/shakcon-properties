@@ -1,11 +1,13 @@
 // app/layout.js
 import Navbar from './components/Navbar';
+import ScrollReveal from './components/ScrollReveal';
+import IntroSplash from './components/IntroSplash';
 import './globals.css';
 
 export const metadata = {
-  title: 'Shakcon Properties - Florida Licensed Contractor | Remodeling & Restoration',
-  description: 'Shakcon Properties is a Florida-licensed residential contractor serving Central Florida with quality remodeling and restoration services. 203k Certified. Get your free estimate today!',
-  keywords: 'home remodeling, restoration services, Florida contractor, Leesburg, Orlando, kitchen remodeling, storm damage repair, bathroom renovation, general contractor, 203k contractor',
+  title: 'Shakcon Properties | Insurance Restoration, Water Mitigation & Reconstruction | Central FL',
+  description: 'Shakcon Properties LLC is a Minority- & Woman-Owned Florida Certified Residential Contractor (CRC1334828) for insurance restoration, water mitigation, structural drying, and reconstruction in Central Florida. IICRC Certified Firm, Xactimate trained, fully insured.',
+  keywords: 'water mitigation, structural drying, insurance restoration, water damage restoration, reconstruction, drywall, roofing, siding, IICRC, home remodeling, restoration services, Florida contractor, Leesburg, Orlando, kitchen remodeling, storm damage repair, bathroom renovation, general contractor, 203k contractor',
   openGraph: {
     title: "Shakcon Properties - Central Florida's Trusted Contractor",
     description: 'Quality remodeling and restoration services. Licensed & Insured. 24/7 Emergency Service. Free Estimates.',
@@ -79,7 +81,7 @@ const schemaMarkup = {
     }
   ],
   "priceRange": "$$",
-  "description": "Shakcon Properties is a Florida-licensed residential contractor (CRC1334828) serving Central Florida with quality kitchen remodeling, bathroom renovation, storm damage restoration, and general contracting services. 203k Renovation Specialist. Serving Fruitland Park, Leesburg, The Villages, Orlando, and surrounding areas.",
+  "description": "Shakcon Properties LLC is a Minority- & Woman-Owned Florida Certified Residential Contractor (CRC1334828) specializing in insurance restoration, water mitigation, structural drying, and reconstruction. IICRC Certified Firm. IICRC WRT Certified Technician. Xactimate Level 1 & 2 Trained. Fully insured. 203k Renovation Specialist. Serving Fruitland Park, Leesburg, The Villages, Orlando, and surrounding areas.",
   "areaServed": [
     "Fruitland Park, FL",
     "Leesburg, FL",
@@ -96,6 +98,14 @@ const schemaMarkup = {
     "@type": "OfferCatalog",
     "name": "Home Improvement Services",
     "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Mitigation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Drying" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insurance Restoration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Reconstruction" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flooring" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roofing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Remodeling" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Renovation" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration" } },
@@ -103,6 +113,12 @@ const schemaMarkup = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cabinet Sales & Installation" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "General Contracting" } }
     ]
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "IICRC Certified Firm",
+    "credentialCategory": "certification",
+    "recognizedBy": { "@type": "Organization", "name": "Institute of Inspection Cleaning and Restoration Certification (IICRC)", "url": "https://www.iicrc.org" }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -120,7 +136,7 @@ const schemaMarkup = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -128,6 +144,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-screen">
+        <IntroSplash />
+        <ScrollReveal />
         <Navbar />
         <main className="pt-16 md:pt-20">{children}</main>
       </body>

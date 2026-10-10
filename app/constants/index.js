@@ -1,8 +1,8 @@
 // app/constants/index.js
 export const COMPANY_INFO = {
   name: 'Shakcon Properties',
-  tagline: 'For All Your Home Restoration Needs',
-  description: 'Florida-licensed residential contractor serving Central Florida with quality craftsmanship and integrity. 203k Renovation Specialist.',
+  tagline: 'Insurance Restoration • Water Mitigation • Reconstruction',
+  description: 'Minority- & Woman-Owned Florida Certified Residential Contractor specializing in insurance restoration, water mitigation, and reconstruction across Central Florida. IICRC WRT Certified Technician. Xactimate Level 1 & 2 Trained. Fully Insured.',
   license: 'CRC1334828',
 };
 
@@ -147,6 +147,7 @@ export const TESTIMONIALS = [
 ];
 
 export const CERTIFICATIONS = [
+  { name: 'IICRC Certified Firm', image: '/iicrc-logo.png', link: '/iicrc-certified-firm.jpg', wide: true },
   { name: '203k Certified', image: '/203k.png' },
   { name: 'Lead Safe Certified', image: '/lead-safe.png' },
   { 

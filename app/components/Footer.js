@@ -14,6 +14,9 @@ export default function Footer() {
             <h3 className="font-bold text-xl mb-4">{COMPANY_INFO.name}</h3>
             <p className="text-gray-400 text-sm mb-4">{COMPANY_INFO.description}</p>
             <div className="flex gap-3 items-center mb-4">
+              <a href="/iicrc-certified-firm.jpg" target="_blank" rel="noopener noreferrer" className="bg-white rounded-md px-2 py-1" title="IICRC Certified Firm">
+                <Image src="/iicrc-logo.png" alt="IICRC Certified Firm" width={80} height={30} className="object-contain h-[26px] w-auto" />
+              </a>
               <Image src="/203k.png" alt="203k Certified" width={30} height={30} className="object-contain opacity-70" />
               <a 
                 href="https://www.bbb.org/us/fl/fruitland-park/profile/remodel-contractors/shakcon-properties-llc-0733-235970271/#sealclick" 

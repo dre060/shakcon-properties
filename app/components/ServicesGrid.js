@@ -4,10 +4,10 @@ import Image from 'next/image';
 export default function ServicesGrid() {
   const services = [
     {
-      title: 'Kitchen & Bath Remodeling',
-      description: 'Complete kitchen and bathroom transformations with expert craftsmanship',
-      image: '/flooring.jpg',
-      features: ['Custom Cabinets', 'Granite Countertops', 'Tile Installation', 'Fixture Upgrades']
+      title: 'Water Mitigation & Insurance Restoration',
+      description: 'IICRC WRT certified water mitigation and structural drying, with Xactimate-based estimates for your insurance claim',
+      image: '/restoration.jpg',
+      features: ['Water Mitigation', 'Structural Drying', 'Insurance Claim Documentation', 'Full Reconstruction']
     },
     {
       title: 'Flooring & Interior',
@@ -18,7 +18,7 @@ export default function ServicesGrid() {
     {
       title: '203k Renovation Services',
       description: 'FHA 203k certified contractor - we handle all renovation financing requirements',
-      image: '/restoration.jpg',
+      image: '/project15.jpg',
       features: ['203k Loan Consultation', 'Complete Renovations', 'Code Compliance', 'Streamlined & Standard 203k']
     }
   ];
@@ -35,14 +35,14 @@ export default function ServicesGrid() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
-              <div className="w-32 h-32 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+            <div key={index} className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center border-b-4 border-transparent hover:border-yellow-400">
+              <div className="w-32 h-32 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden ring-4 ring-yellow-100 group-hover:ring-yellow-400 transition-all duration-300">
                 <Image 
                   src={service.image} 
                   alt={service.title} 
                   width={120} 
                   height={120} 
-                  className="rounded-full object-cover w-full h-full" 
+                  className="rounded-full object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" 
                 />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
@@ -57,13 +57,11 @@ export default function ServicesGrid() {
         </div>
         
         <div className="mt-10 text-center">
-          <h3 className="text-2xl font-semibold mb-6">We Also Specialize In:</h3>
+          <h3 className="text-2xl font-semibold mb-6">Our Services:</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Kitchen Remodeling</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Bathroom Remodeling</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Window & Door Replacement</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Siding Installation</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md text-sm">Deck & Patio Construction</span>
+            {['Water Mitigation', 'Structural Drying', 'Emergency Services', 'Interior Reconstruction', 'Drywall', 'Flooring', 'Cabinetry', 'Roofing', 'Siding', 'Remodeling'].map((s) => (
+              <span key={s} className="bg-white px-4 py-2 rounded-full shadow-md text-sm cursor-default transition-all duration-300 hover:bg-yellow-400 hover:-translate-y-1 hover:shadow-lg">{s}</span>
+            ))}
             <span className="bg-yellow-400 text-black px-4 py-2 rounded-full shadow-md text-sm font-semibold">
               🏆 203k Certified Contractor
             </span>

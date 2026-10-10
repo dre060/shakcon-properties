@@ -56,10 +56,17 @@ export default function HomePage() {
                         <p className="text-xs mt-1 font-medium">BBB</p>
                       </a>
                     ) : (
-                      <>
-                        <Image src={cert.image} alt={cert.name} width={70} height={70} className="object-contain mx-auto" />
-                        <p className="text-xs mt-1 font-medium">{cert.name.split(' ')[0]}</p>
-                      </>
+                      cert.link ? (
+                        <a href={cert.link} target="_blank" rel="noopener noreferrer" title="View IICRC Certified Firm verification">
+                          <Image src={cert.image} alt={cert.name} width={140} height={52} className="object-contain mx-auto h-[52px] w-auto" />
+                          <p className="text-xs mt-1 font-medium">{cert.name}</p>
+                        </a>
+                      ) : (
+                        <>
+                          <Image src={cert.image} alt={cert.name} width={70} height={70} className="object-contain mx-auto" />
+                          <p className="text-xs mt-1 font-medium">{cert.name.split(' ')[0]}</p>
+                        </>
+                      )
                     )}
                   </div>
                 ))}
